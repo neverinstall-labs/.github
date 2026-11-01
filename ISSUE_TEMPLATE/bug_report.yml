@@ -1,0 +1,36 @@
+name: Bug report
+description: The tool gave a wrong result, failed or crashed.
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Release tag, commit, or the date you used the hosted tool.
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you ran, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Commands or inputs. Remove hostnames, IP addresses and other private data before pasting.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, browser, and the platform the tool was used against.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Output or logs
+      description: Remove private data before pasting.
+      render: text

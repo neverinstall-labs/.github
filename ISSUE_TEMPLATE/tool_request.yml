@@ -1,0 +1,21 @@
+name: Tool or feature request
+description: Propose a new tool, or a feature for an existing one.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What you are trying to plan, evaluate, migrate or run, and what is hard about it today.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What the tool or feature would take as input and produce as output.
+  - type: textarea
+    id: platforms
+    attributes:
+      label: Platforms
+      description: The platforms this should work with.

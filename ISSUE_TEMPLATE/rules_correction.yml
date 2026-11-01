@@ -1,0 +1,31 @@
+name: Correct a rule or figure
+description: A vendor rule, formula, price rule or hardware figure is wrong or out of date.
+labels: [rules-correction]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: File and entry
+      description: The data file and the entry that is wrong, or the tool and the value it shows.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Current value and correct value
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: URL of the vendor documentation or specification that shows the correct value.
+    validations:
+      required: true
+  - type: input
+    id: checked
+    attributes:
+      label: Date checked
+      description: When you read the source (YYYY-MM-DD).
+    validations:
+      required: true
